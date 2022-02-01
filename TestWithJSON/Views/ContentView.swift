@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var viewModel = ContentViewModel()
 
     var body: some View {
         TabView {
@@ -17,6 +16,11 @@ struct ContentView: View {
                     Image(systemName: "rectangle.stack")
                     Text("Albums")
                 }
+            PhotosView()
+                .tabItem {
+                    Image(systemName: "photo.circle.fill")
+                    Text("Photos")
+                }
         }
     }
 }
@@ -24,6 +28,5 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .environmentObject(Network())
     }
 }
