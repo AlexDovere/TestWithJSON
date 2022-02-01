@@ -8,19 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var networkReachability = NetworkReachability()
 
     var body: some View {
         TabView {
-            AlbumView()
+            AlbumView().opacity(networkReachability.isReachable ? 1 : 0)
                 .tabItem {
                     Image(systemName: "rectangle.stack")
                     Text("Albums")
                 }
-            PhotosView()
+            PhotosView().opacity(networkReachability.isReachable ? 1 : 0)
                 .tabItem {
                     Image(systemName: "photo.circle.fill")
                     Text("Photos")
                 }
+        }
+        .overlay {
+            if !networkReachability.isReachable {
+
+                    Text("Connection failed, please make sure your data connection or wifi is active")
+                        .bold()
+                        .font(.largeTitle)
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.red.cornerRadius(12))
+                    .frame(width: UIScreen.main.bounds.width*0.8)
+            }
         }
     }
 }
