@@ -24,27 +24,33 @@ struct PhotosView: View {
 
     var asyncImages: some View {
         ForEach(viewModel.photos) { photo in
-            AsyncImage(url: URL(string: photo.url)) { image in
-                NavigationLink(destination: {
-                    ZStack {
-                        AsyncImage(url: URL(string: photo.url))
-                        Text(photo.title)
-                    }
-                }, label: {
-                    VStack {
+            NavigationLink(destination: {
+                ZStack {
+                    AsyncImage(url: URL(string: photo.url)) { image in
                         image
                             .resizable()
-                            .frame(width: (UIScreen.main.bounds.width/3) - 1,
-                                   height: (UIScreen.main.bounds.width/3) - 1)
-                    }                })
-            } placeholder: {
-                VStack {
-                    Image(systemName: "photo")
+                            .scaledToFit()
+                    } placeholder: {
+                        Image(systemName: "photo")
+                    }
+                    Text(photo.title)
                 }
-            }
+            }, label: {
+                AsyncImage(url: URL(string: photo.thumbnailUrl)) { image in
+                    VStack {
+                        image.resizable()
+                            .frame(width: (UIScreen.main.bounds.width/3) - 1, height: (UIScreen.main.bounds.width/3) - 1)
+                    }
+                } placeholder: {
+                    VStack {
+                        Image(systemName: "photo")
+                    }
+                }
+            })
         }
     }
 }
+
 
 struct PhotosView_Previews: PreviewProvider {
     static var previews: some View {
