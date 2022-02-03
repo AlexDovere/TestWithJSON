@@ -22,6 +22,12 @@ struct ContentView: View {
                     Image(systemName: "photo.circle.fill")
                     Text("Photos")
                 }
+            PhotoSDView()
+                .opacity(networkReachability.isReachable ? 1 : 0)
+                .tabItem {
+                    Image(systemName: "photo")
+                    Text("SD Photo")
+                }
         }
         .overlay {
             if !networkReachability.isReachable {

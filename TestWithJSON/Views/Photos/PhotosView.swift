@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+/// First try of implementation with native AsyncImage. At the moment it does not perform well, the download of the image seems to be slow and not all the image are downloaded properly.
 
 struct PhotosView: View {
     @StateObject var viewModel = PhotosViewModel()
@@ -15,6 +16,7 @@ struct PhotosView: View {
         NavigationView {
             ScrollView {
                 LazyVGrid(columns: columnGrid) {
+//  Split views for better readability. It eliminates right-shifted code problem
                     asyncImages
                 }
             }
@@ -40,6 +42,8 @@ struct PhotosView: View {
                     VStack {
                         image.resizable()
                             .frame(width: (UIScreen.main.bounds.width/3) - 1, height: (UIScreen.main.bounds.width/3) - 1)
+                            .cornerRadius(8)
+                        .clipped()
                     }
                 } placeholder: {
                     VStack {
