@@ -8,8 +8,10 @@
 import Foundation
 import SystemConfiguration
 
+///* A class with a unique Published var created in order to test the reachability of the desired address. In our case "https://jsonplaceholder.typicode.com"
+
 class NetworkReachability: ObservableObject {
-    @Published private(set) var isReachable: Bool = false
+    @Published var isReachable: Bool = false
     private let reachability = SCNetworkReachabilityCreateWithName(nil, "https://jsonplaceholder.typicode.com")
 
     init() {
