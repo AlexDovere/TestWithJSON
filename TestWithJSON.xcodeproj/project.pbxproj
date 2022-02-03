@@ -76,7 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				8403432027A952A400BC86A4 /* Assets.xcassets */,
-				84C0F43827AB614700F062FC /* PhotosWithSDWeb */,
 				8403433727A9768000BC86A4 /* Views */,
 				8403433A27A988E500BC86A4 /* Extensions */,
 				8403432A27A95F1800BC86A4 /* Models */,
@@ -116,6 +115,7 @@
 		8403433727A9768000BC86A4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				84C0F43827AB614700F062FC /* PhotosWithSDWeb */,
 				8403431E27A952A300BC86A4 /* ContentView.swift */,
 				8403433D27A98EE000BC86A4 /* Albums */,
 				8403433E27A9900E00BC86A4 /* Photos */,
