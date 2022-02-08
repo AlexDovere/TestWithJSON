@@ -46,9 +46,8 @@ struct PhotosView: View {
                         .clipped()
                     }
                 } placeholder: {
-                    VStack {
                         Image(systemName: "photo")
-                    }
+                        .frame(width: 150, height: 150, alignment: .center)
                 }
             })
         }
