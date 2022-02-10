@@ -8,7 +8,7 @@
 import SwiftUI
 import Kingfisher
 
-struct KFPhoto: View {
+struct KFPhotoView: View {
     @StateObject var viewModel = PhotoSDViewModel()
     var columnGrid: [GridItem] =
         [GridItem(.flexible()),
@@ -45,6 +45,6 @@ struct KFPhoto: View {
 
 struct KFPhoto_Previews: PreviewProvider {
     static var previews: some View {
-        KFPhoto()
+        KFPhotoView()
     }
 }

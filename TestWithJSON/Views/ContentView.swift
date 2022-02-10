@@ -28,7 +28,7 @@ struct ContentView: View {
                     Image(systemName: "photo")
                     Text("SD Photo")
                 }
-            KFPhoto().opacity(networkReachability.isReachable ? 1 : 0)
+            KFPhotoView().opacity(networkReachability.isReachable ? 1 : 0)
                 .tabItem {
                     Image(systemName: "rectangle.grid.3x2")
                     Text("KF Photo")

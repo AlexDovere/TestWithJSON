@@ -24,7 +24,7 @@
 		84C0F43A27AB619200F062FC /* PhotoSDViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C0F43927AB619200F062FC /* PhotoSDViewModel.swift */; };
 		84C0F43C27AB61FC00F062FC /* PhotoSDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C0F43B27AB61FC00F062FC /* PhotoSDView.swift */; };
 		84CF709727B5185A002EBC73 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 84CF709627B5185A002EBC73 /* Kingfisher */; };
-		84CF709A27B518E3002EBC73 /* KFPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CF709927B518E3002EBC73 /* KFPhoto.swift */; };
+		84CF709A27B518E3002EBC73 /* KFPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CF709927B518E3002EBC73 /* KFPhotoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +44,7 @@
 		8403434127A9904400BC86A4 /* PhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewModel.swift; sourceTree = "<group>"; };
 		84C0F43927AB619200F062FC /* PhotoSDViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSDViewModel.swift; sourceTree = "<group>"; };
 		84C0F43B27AB61FC00F062FC /* PhotoSDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSDView.swift; sourceTree = "<group>"; };
-		84CF709927B518E3002EBC73 /* KFPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFPhoto.swift; sourceTree = "<group>"; };
+		84CF709927B518E3002EBC73 /* KFPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFPhotoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,7 +166,7 @@
 		84CF709827B518B4002EBC73 /* KFPhoto */ = {
 			isa = PBXGroup;
 			children = (
-				84CF709927B518E3002EBC73 /* KFPhoto.swift */,
+				84CF709927B518E3002EBC73 /* KFPhotoView.swift */,
 			);
 			path = KFPhoto;
 			sourceTree = "<group>";
@@ -260,7 +260,7 @@
 				8403433027A9618B00BC86A4 /* Album.swift in Sources */,
 				84C0F43C27AB61FC00F062FC /* PhotoSDView.swift in Sources */,
 				8403434027A9903900BC86A4 /* PhotosView.swift in Sources */,
-				84CF709A27B518E3002EBC73 /* KFPhoto.swift in Sources */,
+				84CF709A27B518E3002EBC73 /* KFPhotoView.swift in Sources */,
 				8403433927A976C100BC86A4 /* AlbumView.swift in Sources */,
 				8403433227A9623800BC86A4 /* Photo.swift in Sources */,
 			);
