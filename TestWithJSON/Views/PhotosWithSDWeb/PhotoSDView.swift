@@ -30,6 +30,7 @@ struct PhotoSDView: View {
                             }
                         }, label: {
                             WebImage(url: URL(string: photo.url))
+                                .placeholder(Image(systemName: "photo"))
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
                                 .frame(width: (UIScreen.main.bounds.width/3) - 1, height: (UIScreen.main.bounds.width/3) - 1)
