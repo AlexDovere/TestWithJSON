@@ -30,6 +30,7 @@ struct KFPhotoView: View {
                                 .placeholder({
                                     Image(systemName: "photo")
                                 })
+                                .resizable()
                                 .aspectRatio(contentMode: .fill)
                                 .frame(width: (UIScreen.main.bounds.width/3) - 1, height: (UIScreen.main.bounds.width/3) - 1)
                                 .cornerRadius(8)

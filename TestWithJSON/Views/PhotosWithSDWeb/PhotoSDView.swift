@@ -37,7 +37,7 @@ struct PhotoSDView: View {
                                 .cornerRadius(8)
                             .clipped()
                         })
-                    }.padding(15)
+                    }
                 }.navigationTitle("SD Photos")
             }
         }
