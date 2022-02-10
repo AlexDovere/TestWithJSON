@@ -29,7 +29,7 @@ struct PhotoSDView: View {
                                 Text(photo.title)
                             }
                         }, label: {
-                            WebImage(url: URL(string: photo.url))
+                            WebImage(url: URL(string: photo.thumbnailUrl))
                                 .placeholder(Image(systemName: "photo"))
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
